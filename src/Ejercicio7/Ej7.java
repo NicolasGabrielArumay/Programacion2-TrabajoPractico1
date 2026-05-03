@@ -13,10 +13,11 @@ public class Ej7 {
         final int respuesta = 47;
         int num;
         System.out.println("Adivina el numero (entre 1-100)!!!");
+        //Le pido un numero al usuario
         do {
-            
             System.out.println("Ingrese un numero: ");
             num = sc.nextInt();
+        //Compruebo si es mayor o menor al numero a adivinar
             if(num>respuesta){
                 System.out.println("El numero es menor que " + num);
             } else if (num<respuesta){
@@ -24,6 +25,8 @@ public class Ej7 {
             }
             
         } while(num!=respuesta);
+        
+        //Muestro por pantalla que adivino el numero
         System.out.println("Felicidades!!!");
         System.out.println("El numero era: " + respuesta);
     }
